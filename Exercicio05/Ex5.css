@@ -1,0 +1,110 @@
+ * {
+    margin: 0;
+    padding: 0;
+ }
+
+ html{
+  background-color: #FFC0CB;
+}
+
+body{
+  width: 100%;
+  text-align: center;
+  height: 100px;
+  box-sizing: border-box;
+}
+
+h2{
+  font-family: Arial, Helvetica, sans-serif;
+  color: 	#CD5C5C;
+  text-shadow: 10px;
+  border: black;
+}
+
+input#com{
+  width: 177px;
+  height: 21;
+  border-radius: 10px;
+  background-color: #eeb0c4;
+}
+
+input#lar{
+  width: 177px;
+  height: 21;
+  border-radius: 10px;
+  background-color: 	#eeb0c4;
+}
+input{
+  width: 177px;
+  height: 21px;
+  border-radius: 10px;
+  background-color: #FFE4E1;
+  padding-left: 10px;
+}
+
+p{
+color:	#CD5C5C;
+}
+
+
+.navbar {
+    padding: 0;
+  }
+  
+  .navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  
+  .navbar li {
+    position: relative;
+  }
+  
+  .navbar a,
+  .navbar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 30px;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
+    transition: 0.3s;
+  }
+  
+  .navbar a i,
+  .navbar a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+  }
+  
+  .navbar a:hover,
+  .navbar .active,
+  .navbar .active:focus,
+  .navbar li:hover>a {
+    color: #ffc451;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+  }
+  
+  .navbar-mobile {
+    position: fixed;
+  
+  }
+  
+  .navbar {
+    text-align: center;
+    padding-top: 20px;
+  
+  }
+  
+  .navbar ul li a {
+    font-size: large;
+  }

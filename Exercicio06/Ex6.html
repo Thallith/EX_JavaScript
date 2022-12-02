@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 6</title>
+</head>
+<!-- Tendo como dados de entrada a altura e o sexo de uma pessoa a partir de uma caixa de combinação, construa uma página que
+calcule seu peso ideal, utilizando as seguintes fórmulas: 
+Para homens: (72.7*h) - 58
+Para mulheres: (62.1*h) - 44.7-->
+
+<body>
+    <link rel="stylesheet" href="Ex6.css">
+
+     <script>
+         function Calcular() {
+            var s = (document.getElementById('s').value)
+            var h = parseFloat(document.getElementById('h').value)
+
+            if (s == [value = "F"]) {
+                total = (62.1 * h) - 44.7
+                document.getElementById('res').innerHTML = "Seu peso ideal é " + (total.toFixed(1)) + " Kg"
+            } else if (s == [value = "M"]) {
+                total = (72.7 * h) - 58
+                document.getElementById('res').innerHTML = "Seu peso ideal é " + (total.toFixed(1)) + " Kg"
+
+
+            }
+        } 
+    </script>
+
+<nav class="navbar navbar-expand-lg bg-black">
+  <div class="container-fluid bg-black">
+  
+   
+  
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../index2.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../index2.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../index2.html">Exercicios</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+    
+    <div class="container">
+      <div id="calc-container">
+        <h2>Descubra seu peso ideal</h2>
+        <form>
+          <div>
+            <div class="form-control">
+            Sexo:  <select id="s">
+                <option value="F">Feminino</option>
+                <option value="M">Masculino</option>
+              </select>
+
+            </div>
+            <div class="form-control">
+              <label for="h">Altura:</label>
+              <input
+                type="text"
+                name="h"
+                id="h"
+                placeholder="Exemplo 1.70"
+              />
+            </div>
+          </div>
+          <div class="action-control">
+            <input type="button" value="Calcular" onclick="Calcular()" id="calc-btn">
+
+
+          
+          </div>
+          <h4 id="res"></h4>
+          <h4 id="total"></h4>
+        </form>
+      </div>
+     
+    
+
+    
+
+    
+
+
+
+    
+</body>
+
+</html>

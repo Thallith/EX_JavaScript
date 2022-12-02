@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 03</title>
+</head>
+
+<!-- Desenvolva uma página leia o nome, o valor e a quantidade vendida de três produtos. 
+    Calcule o valor total da venda. -->
+
+    <script>
+      function calcular()
+      {
+          var produto = document.getElementById('name').value
+          var valor=parseFloat(document.getElementById('v').value)
+          var qtd=parseInt(document.getElementById('q').value)
+      
+
+          var produto1 = document.getElementById('name1').value
+          var valor1=parseFloat(document.getElementById('v1').value)
+          var qtd1=parseInt(document.getElementById('q1').value)
+    
+
+          var produto2 = document.getElementById('name2').value
+          var valor2=parseFloat(document.getElementById('v2').value)
+          var qtd2=parseInt(document.getElementById('q2').value)
+
+          var resul = (qtd*valor) + (qtd1*valor1) + (qtd2*valor2)
+        
+          document.getElementById('total').innerHTML= "Custo da venda:" + resul + "R$"
+
+      }
+
+         
+      
+  </script>
+<body>  
+    <link rel="stylesheet" href="Ex3.css">
+   
+
+     
+<nav class="navbar navbar-expand-lg bg-black">
+  <div class="container-fluid bg-black">
+  
+   
+  
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../index2.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../index2.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../index2.html">Exercicios</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+    <div class="title-box">
+      
+      <h2> <img src="img/barcode-animate.svg" alt=""></h2>
+
+      
+
+   
+    <form action="" method="post">
+      <h1 class="titulo">Vendas</h1>
+      <div class="user-box">
+        <input type="text" id="name"> 
+        <label for="name">Nome do 1° produto:</label> 
+        
+        </div>
+
+        <div class="user-box">
+          <input type="text" id="q">
+        <label for="q">Quantidade do 1°: </label>
+        
+        </div>
+
+        <div class="user-box">
+          <input type="text" id="v">
+        <label for="v">Valor do 1° produto:</label>
+   
+        </div>
+        <div class="user-box">
+          <input type="text" id="name1"> 
+          <label for="name">Nome do 2° produto:</label> 
+          
+          </div>
+          <div class="user-box">
+            <input type="text" id="q1">
+          <label for="q">Quantidade do 2°: </label>
+          
+          </div>
+
+          <div class="user-box">
+            <input type="text" id="v1">
+          <label for="v">Valor do 2° produto:</label>
+     
+          </div>
+        
+          <div class="user-box">
+            <input type="text" id="name2"> 
+            <label for="name">Nome do 3° produto:</label> 
+            
+            </div>
+            <div class="user-box">
+              <input type="text" id="q2">
+            <label for="q">Quantidade do 3°: </label>
+            
+            
+            </div>
+
+            <div class="user-box">
+              <input type="text" id="v2">
+            <label for="v">Valor do 3° produto:</label>
+       
+            </div>
+            <input type="button" onclick="calcular()"  id="btn" value="Calcular">
+          
+      
+    
+    </form>
+    <h4 id="res"> </h4>
+    <h4 id="total"> </h4>
+</div>
+</div>
+</div>
+
+
+</body>
+</html>

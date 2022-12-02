@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 4</title>
+</head>
+ <a href="ex4.css"></a>
+<body>
+    <link rel="stylesheet" href="Ex4.css">
+    <!-- Desenvolva uma página que leia a quilometragem percorrida por um determinado veículo e o valor do combustível.
+    Calcule o gasto dele, sabendo que o veículo percorre 8km/litro. -->
+    <script>
+       
+        function calcular() {
+            var Valor = parseFloat(document.getElementById('Valor').value)
+            var Km = parseInt(document.getElementById('Km').value)
+            document.getElementById('total').innerHTML = (Km/8)*Valor + "R$"
+            document.getElementById('res').innerHTML = "O gasto desse veículo será de: "
+    
+        }
+    </script>
+
+<nav class="navbar navbar-expand-lg bg-black">
+    <div class="container-fluid bg-black">
+    
+     
+    
+  
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index2.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../index2.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../index2.html">Exercicios</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <div class="container">
+        <h2>Programa para calcular o gasto de um veículo que roda 8Km/l </h2><br>
+
+        Quilometragem(Km): <input type="number" id="Km"> <br> <br>
+        Valor do combustível(R$): <input type="text" id="Valor"> <br> <br>
+        <input type="button" onclick="calcular()" value="Calcular gasto">
+    </div>
+    </form>
+    <h4 id="res"> </h4>
+    <h4 id="total"> </h4>
+</body>
+
+</html>
